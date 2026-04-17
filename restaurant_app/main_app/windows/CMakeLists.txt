@@ -2,6 +2,9 @@
 cmake_minimum_required(VERSION 3.20)
 project(restaurant_app LANGUAGES CXX)
 
+# Force minimum CMake policy version for Firebase SDK compatibility
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
+
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "restaurant_app")

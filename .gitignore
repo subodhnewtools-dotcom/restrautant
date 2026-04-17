@@ -4,20 +4,72 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 *.cmake
+*.o
 *.a
 *.so
 *.dylib
-*.exe
 *.dll
-*.lib
-*.obj
-*.o
+*.exe
 
 # Windows-specific
-*.pdb
-*.ilk
-Debug/
-Release/
-x64/
-Win32/
+*.bat
+*.cmd
+Thumbs.db
+Desktop.ini
+
+# Build directories
+build/
+dist/
+target/
+out/
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.egg-info/
+.Python
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Temp files
+*.tmp
+*.temp
+.DS_Store
+
+# MyPy
+.mypy_cache/
+
+# PyTest
+.pytest_cache/
+
+# Gradle
+.gradle/
+
+# Rust
+Cargo.lock
+target/
+
+# Go
+go.mod
+go.sum
 ```
