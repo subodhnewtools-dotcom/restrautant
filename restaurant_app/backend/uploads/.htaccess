@@ -1,0 +1,19 @@
+# Block PHP execution in uploads directory
+# This prevents uploaded files from being executed as scripts
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} \.php$
+    RewriteRule ^ - [F]
+</IfModule>
+
+# Force download for any PHP files
+<FilesMatch "\.php$">
+    ForceType application/octet-stream
+    Header set Content-Disposition attachment
+</FilesMatch>
+
+# Disable script execution
+<FilesMatch "\.(php|php3|php4|php5|phtml)$">
+    Deny from all
+</FilesMatch>
