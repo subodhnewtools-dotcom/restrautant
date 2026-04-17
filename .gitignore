@@ -1,42 +1,12 @@
 ```
-# CMake build artifacts
-CMakeFiles/
-cmake_install.cmake
-Makefile
-*.cmake
-*.o
-*.a
-*.so
-*.dylib
-*.dll
-*.exe
-
-# Windows-specific
-*.bat
-*.cmd
-Thumbs.db
-Desktop.ini
-
-# Build directories
-build/
-dist/
-target/
-out/
+# Build artifacts
+/build/
+/dist/
 
 # Dependencies
-node_modules/
-venv/
-.venv/
-__pycache__/
-*.egg-info/
-.Python
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+/pubspec.lock
+/.dart_tool/
+/.packages
 
 # Logs
 *.log
@@ -46,30 +16,43 @@ __pycache__/
 .env.local
 *.env.*
 
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS generated
+.DS_Store
+Thumbs.db
+
 # Coverage
-coverage/
-htmlcov/
+/coverage/
+/htmlcov/
 .coverage
 
-# Temp files
-*.tmp
-*.temp
-.DS_Store
-
-# MyPy
-.mypy_cache/
-
-# PyTest
-.pytest_cache/
-
-# Gradle
-.gradle/
-
-# Rust
-Cargo.lock
-target/
-
-# Go
-go.mod
-go.sum
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
